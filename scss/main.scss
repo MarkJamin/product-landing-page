@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900i|Open+Sans|Staatliches');
+
+/* 
+
+    font-family: 'Staatliches', cursive;
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "hero hero nav"
+    "hero hero nav"
+}
+
+.header-left {
+    grid-area: hero;
+    border: 10px solid #222222;
+    z-index: 0;
+}
+
+.header-h1 {
+    font-family: 'Staatliches', cursive;
+    grid-area: hero;
+    min-height: 400px;
+    padding-left: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-size: 6rem;
+    
+    span {
+        color: #ffffff;
+        border-left: 5px solid #ffffff;
+        border-top: 5px solid #ffffff;
+        border-bottom: 5px solid #ffffff;
+        padding: 10px;
+    }
+}
+
+#header-img {
+    grid-area: hero;
+    min-height: 500px;
+    padding: 50px;
+}
+
+
+#nav-bar {
+    grid-area: nav;
+    background: #ff4646;
+    ul {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        color: #ffffff;
+        list-style-type: none;
+        padding-top: 150px;
+        text-align: center;
+    }
+}
+
+
+#collection {
+    padding-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+}
