@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Build a Product Page</title>
     <link rel="stylesheet" href="/dist/css/main.min.css">
+    <script src="/main.js"></script>
 </head>
+
+
 <body class="container">
     <header id="header">
         <section class="header-left">
@@ -15,50 +18,61 @@
         <!-- Hero Image-->
         <img src="https://source.unsplash.com/Tb38UzCvKCY/500x500" alt="The Watch" id="header-img">
         
-        <nav id="nav-bar">
+        <nav id="nav-section">
             <ul>
             <li class="nav-link">Collection</li>
             <li class="nav-link">Shop by Brand</li>
             <li class="nav-link">Sign in / Register</li>
             </ul>
         </nav>
+<!-- 
+        <nav id="nav-bar">
+            <ul>
+            <li class="nav-link">Collection</li>
+            <li class="nav-link">Shop by Brand</li>
+            <li class="nav-link">Sign in / Register</li>
+            </ul>
+        </nav> -->
     </header>
 
+
     <section id="collection">
+      <h1 class="collection-header">Pick your wrist weapon</h1>
             <div class="gallery">
-                    <a target="_blank" href="img_5terre.jpg">
-                      <img src="https://source.unsplash.com/300x300/?random,watches" alt="Cinque Terre">
+                    <a target="_blank" href="watch1.jpg">
+                      <img src="img/watch1.jpg" height="300" width="300" alt="This is watch one">
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">The That's Her watch</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="img_forest.jpg">
-                      <img src="https://source.unsplash.com/300x300/?random,watches" alt="Forest">
+                    <a target="_blank" href="watch2.jpg">
+                      <img src="img/watch2.jpg" height="300" width="300" alt="This is watch two">
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">The Og Original watch</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="img_lights.jpg">
-                      <img src="https://source.unsplash.com/300x300/?random,watches" alt="Northern Lights">
+                    <a target="_blank" href="watch3.jpg">
+                      <img src="img/watch3.jpg" height="300" width="300" alt="This is watch three">
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">The Distant watch</div>
                   </div>
                   
                   <div class="gallery">
-                    <a target="_blank" href="img_mountains.jpg">
-                      <img src="https://source.unsplash.com/300x300/?random,watches" alt="Mountains">
+                    <a target="_blank" href="watch4.jpg">
+                      <img src="img/watch4.jpg" height="300" width="300" alt="This is watch four">
                     </a>
-                    <div class="desc">Add a description of the image here</div>
+                    <div class="desc">I found it watch</div>
                   </div>
-    </section>
+    </section> 
 
 
-    <section id="video">
+    <section id="watchVideo">
+      <video src="/img/watch-vid.mp4" type="video/mp4" height="500" width="500" autoplay loop muted >
+      </video>
     </section>
 
-    </section>
     <aside>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <input name="email" type="email" placeholder="Enter your email to Subscribe" id="email" required>
@@ -67,6 +81,7 @@
     </aside>
 
     <!--https://source.unsplash.com/300x300/?random,watches-->
+    
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
