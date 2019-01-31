@@ -12,34 +12,32 @@
 
 <body class="container" id="home">
     <header id="header">
-
-        <section class="header-left">
-        <h1 class="header-h1"><span>Time</span>4One</h1>
-        </section>
-        <!-- Hero Image-->
-        <img src="https://source.unsplash.com/Tb38UzCvKCY/500x500" alt="The Watch" id="header-img">
-        
-        <nav id="nav-section">
-            <ul>
-            <li class="nav-link">Collection</li>
-            <li class="nav-link">Shop by Brand</li>
-            <li class="nav-link">Sign in / Register</li>
-            </ul>
-        </nav>
-<!-- 
-        <nav id="nav-bar">
-            <ul>
-            <li class="nav-link">Collection</li>
-            <li class="nav-link">Shop by Brand</li>
-            <li class="nav-link">Sign in / Register</li>
-            </ul>
-        </nav> -->
+      <img id="header-img" src="/img/clock.png" height="40" width="40" alt="Logo">
+      <nav id="nav-bar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#news">News</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+      </nav>
     </header>
 
+    <section class="top">
+        <h1 class="header-h1"><span>Time</span>4One</h1>
+        <!-- Hero Image-->
+        <img src="https://source.unsplash.com/Tb38UzCvKCY/500x500" alt="The Watch" id="section-img">
+        
+        <section id="shop-section">
+            <ul>
+            <li class="nav-link">Collection</li>
+            <li class="nav-link">Shop by Brand</li>
+            <li class="nav-link">Sign in / Register</li>
+            </ul>
+        </section>
+    </section>
 
     <section id="collection">
       <h1 class="collection-header">Pick your wrist weapon</h1>
-            <content class="gallery">
+            <content class="gallery" id="news">
                     <a target="_blank" href="watch1.jpg">
                       <img src="img/watch1.jpg" height="300" width="300" alt="This is watch one">
                     </a>
@@ -84,15 +82,15 @@
 
 
     <section id="section-video">
-      <video id="video" src="/img/watch-vid.mp4" type="video/mp4" height="320 width="300" autoplay loop muted>
+      <video id="video" src="/img/watch-vid.mp4" type="video/mp4" height="320 width="300" autoplay loop muted controls>
       </video>
-        <aside class="video-aside"><h2>The clock is always ticking...</h2>
+        <aside class="video-aside" id="about"><h2>The clock is always ticking...</h2>
           <br>
         <button>Buy some Time!</button>
         </aside>
     </section>
 
-    <section>
+    <section id="contact">
         <form action="https://www.freecodecamp.com/email-submit" id="form">
             <input name="email" type="email" placeholder="Sub 2 see more watches" id="email" required>
             <input type="submit" id="submit" value="Subscribe">
@@ -100,5 +98,8 @@
     </section>
 
     <!--https://source.unsplash.com/300x300/?random,watches-->
+    
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
