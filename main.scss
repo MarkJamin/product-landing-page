@@ -280,10 +280,12 @@ button {
     }
 
     video {
+        padding 0;
         height: 250px;
-        width: 500px;
+        width: 250px;
     }
     .video-aside {
+        padding: 0;
         font-size: 1.3rem;
     }
 
