@@ -14,9 +14,13 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 section.top {
-    padding: 100px;
+    padding: 30px;
     background: #ddd;
     display: grid;
     grid-gap: 50px;
@@ -26,10 +30,11 @@ section.top {
 }
 
 .top {
+    display: grid;
     grid-area: hero;
-    min-height: 400px;
+    max-width: 100%;
     z-index: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .header-h1 {
@@ -38,7 +43,7 @@ section.top {
     flex-direction: column wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 355px;
+    padding-left: 265px;
     font-family: 'Staatliches', cursive;
     z-index: 1;
     font-size: 6rem;
@@ -126,11 +131,11 @@ section.top {
 
 
 video {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     grid-area: video;
     margin: 0 auto;
-    border: 10px double #ddd;
 }
 
 .video-aside {
@@ -174,7 +179,7 @@ button {
     grid-gap: 50px;
     background: rgb(145, 140, 210);
     background: linear-gradient(90deg, rgba(145, 140, 210, 1) 0%, rgba(210, 180, 140, 1) 50%, rgb(140, 205, 210) 100%);
-    padding: 50px;
+    padding: 50px 0;
 
     input {
         font-family: 'Staatliches', cursive;
@@ -194,10 +199,43 @@ button {
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media (max-width: 1250px) {
     
     body {
         overflow-x: hidden;
+    }
+
+    section.top {
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "hero nav";
+    }
+
+    .top {
+        justify-content: space-between;
+        align-items: center;
+        .header-h1 {
+            padding-left: 0;
+            font-size: 4rem;
+        }
+    }
+
+    #section-img {
+        align-items: start;
+        border: 10px solid #222222;
+        grid-area: hero;
+        height: 250px;
+        width: 400px;
+    }
+
+    #shop-section {
+        height: 500px;
+        width: 100%;
+        ul {
+            font-size: 2rem;
+            padding: rem;
+        }
     }
 
     #collection {
@@ -209,42 +247,35 @@ button {
     }
 
     section-video {
-        display: inline-flex;
+        display: grid;
+        display: flex;
         grid-template-areas:
             "hero"
-            "nav";
+            "cta";
     }
 
-    .top {
-        justify-content: center;
-        align-items: center;
-
-        .header-h1 {
-            padding-left: 0;
-            font-size: 4rem;
-        }
+    video {
+        grid-area: video;
+        height: 250px;
+        width: 350px;
     }
 
-    #shop-section {
-        padding: 0px;
-
-        ul {
-            padding-bottom: 100px;
-            font-size: 2rem;
-            padding-left: 0;
-        }
+    .video-aside {
+        grid-area: cta;
+        font-size: 1.3rem;
+        width: auto;
     }
 }
     
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 700px) {
     
     body {
         overflow-x: hidden;
     }
 
     section.top {
-        padding: 0;
+        padding: 50px;
         grid-template-areas:
             "hero"
             "nav";
@@ -280,11 +311,14 @@ button {
     }
 
     video {
+        grid-area: video;
         height: 250px;
-        width: 500px;
+        width: 300px;
     }
     .video-aside {
+        grid-area: cta;
         font-size: 1.3rem;
+        width: auto;
     }
 
    #form {
